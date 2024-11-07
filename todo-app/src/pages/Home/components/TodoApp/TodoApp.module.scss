@@ -1,0 +1,56 @@
+$bg-color: #f0f2f5;
+$primary-color: #4a90e2;
+$button-bg-color: #4a90e2;
+$button-hover-color: #357abd;
+$input-border-color: #ccc;
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+
+.todoAppContainer {
+    max-width: 600px;
+    margin: 100px auto ;
+    padding: 24px;
+    background-color: $bg-color;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px $box-shadow-color;
+    text-align: center;
+
+    h1 {
+        color: $primary-color;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
+
+    .inputContainer {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 16px;
+
+        input[type="text"] {
+            flex: 1;
+            padding: 10px 12px;
+            border: 1px solid $input-border-color;
+            border-radius: 4px;
+            font-size: 16px;
+            outline: none;
+
+            &:focus {
+                border-color: $primary-color;
+            }
+        }
+
+        button {
+            padding: 10px 16px;
+            background-color: $button-bg-color;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                background-color: $button-hover-color;
+            }
+        }
+    }
+}

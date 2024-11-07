@@ -1,0 +1,21 @@
+$list-bg-color: #f3f4f6;
+$padding: 16px;
+$border-radius: 8px;
+
+.todoListContainer {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: $padding;
+    background-color: $list-bg-color;
+    border-radius: $border-radius;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    list-style-type: none;
+}
+
+.todoListItem {
+    margin-bottom: 12px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
